@@ -11,14 +11,11 @@ rgb(215, 233, 247)
 html, body {
     padding: 0;
     margin: 0;
-
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     color: white;
-    
     font-size: 20px;
     font-weight: 600;
-
-    background-color: rgb(249, 243, 223)
+    background-color: rgb(249, 243, 223);
 }
 
 header {
@@ -27,22 +24,40 @@ header {
     align-items: center;
     background-color: #ff7b00e4 !important;
     padding: 10px 0;
+    flex-wrap: wrap;
 }
 
 header>h1 {
-    max-width: 1000px;
     font-size: 3rem;
+    margin: 0;
+    text-align: center;
 }
 
 header>img {
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     height: auto;
-    margin-right: 50px;
-
+    margin-right: 0;
+    margin-bottom: 10px;
     background-color: white;
     border-radius: 100%;
-
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        flex-wrap: nowrap;
+    }
+
+    header>h1 {
+        margin-left: 50px;
+        text-align: left;
+    }
+
+    header>img {
+        margin-right: 50px;
+        margin-bottom: 0;
+    }
 }
 
 ul.topnav {
@@ -51,14 +66,13 @@ ul.topnav {
     padding: 0;
     overflow: hidden;
     background-color: #d24b22;
-
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch; /* Zapewnia jednakową wysokość elementów */
+    align-items: stretch;
 }
 
 ul.topnav li {
-    flex: 1; /* Dostosowuje szerokość wszystkich li do dostępnej przestrzeni */
+    flex: 1;
 }
 
 ul.topnav li a {
@@ -70,8 +84,8 @@ ul.topnav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    height: 100%; /* Ustawia wysokość na 100%, aby rozciągnąć tło */
-    box-sizing: border-box; /* Uwzględnia padding w szerokości i wysokości */
+    height: 100%;
+    box-sizing: border-box;
 }
 
 ul.topnav li a:hover:not(.active) {
@@ -84,7 +98,7 @@ ul.topnav li a.active {
 
 @media screen and (max-width: 600px) {
     ul.topnav {
-        flex-direction: column; /* Układa elementy pionowo na małych ekranach */
+        flex-direction: column;
     }
 }
 
@@ -93,14 +107,12 @@ ul.topnav li a.active {
     padding-top: 50px;
 }
 
-
 .container {
     width: 100%;
-    padding-right: 50px; /*paddingi dla estetyki i wyrównania*/
+    padding-right: 50px;
     padding-left: 50px;
     box-sizing: border-box;
-    margin: auto; /* margin: auto dla wycentrowania calego nagłowka na stronie.*/
-
+    margin: auto;
     background-color: rgb(215, 233, 247);
 }
 
@@ -110,19 +122,16 @@ ul.topnav li a.active {
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
-
     background-color: #38598b;
 }
 
 .col {
-    flex: 1 0 calc(33.3333% - 20px); /* Szerokość kontenera minus 2 razy padding */
+    flex: 1 0 calc(33.3333% - 20px);
     padding: 10px;
     margin: 0 10px;
     margin-bottom: 20px;
-
     box-sizing: border-box;
     position: relative;
-
     word-wrap: break-word;
     overflow-wrap: break-word;
 }

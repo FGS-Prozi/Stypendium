@@ -1,0 +1,31 @@
+TO DO LIST:
+1. Make code clear, add comments and make better css to its readable and delete unnecessary things.
+2. Make working footer, fix HTML code so there is not a multiple divs.
+3. Make other websites:
+- Świadectwa stypendystów,
+- Jak zostać stypendystą?,
+- O Funduszu Stypendialnym,
+- Aktualności,
+- Darczyńcy,
+- Galeria,
+- Kontakt.
+[TEKST DO PODSTRON ZNAJDUJE SIĘ W FOLDERZE INFO]
+4. Set up all of navigation menu options in specific order:
+- Aktualności,
+- O Funduszu Stypendialnym,
+    - Historia,
+    - Charyzmat,
+    - Formacja i formy posługi,
+    - Kapituła,
+    - Statut.
+        [JAVA SCRIPT THIS SHIT IF POSSIBLE ^^^]
+        
+- Jak zostać stypendystą?
+- Darczyńcy,
+- Świadectwa stypendystów,
+- Galeria,
+- Kontakt.
+
+5. Make all websites responsive:
+- Watch course videos and do all of the training videos,
+- Program one websites and copy-paste to others and fix them then.

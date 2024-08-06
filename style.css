@@ -63,37 +63,57 @@ First breakpoint: 1200 width.
   }
 /*---------------------------------------*/
     
-  /*NAVIGATION*/
-  ul.topnav {
-    display: block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #d24b22;
-  }
-    
-  ul.topnav li a {
-    display: block;
-    justify-content: center; /*###*/
-    align-items: center; /*###*/
-    width: 100%;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    height: 100%; /*###*/
-    box-sizing: border-box; /*###*/
-    transition: all 0.5s ease;
-  }
-    
-  ul.topnav li a:hover:not(.active) {
-    background-color: #FF7517;
-  }
-    
-  ul.topnav li a.active {
-    background-color: #4ca1d3;
-  }
+/* Navigation */
+ul.topnav {
+  max-height: 0;
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #d24b22;
+  transition: max-height 1s ease-in-out
+}
+
+/* Styles for the menu button */
+button.menu-toggle {
+  display: block;
+  background-color: #d24b22;
+  color: white;
+  padding: 14px 16px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: "Poppins";
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Show navigation when button is clicked */
+ul.topnav.active {
+  max-height: 500px; /* Adjust this value to be large enough to contain the menu items */
+}
+
+/* Menu item styles */
+ul.topnav li a {
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+ul.topnav li a:hover {
+  background-color: #FF7517;
+}
+
+ul.topnav li a.active {
+  background-color: #4ca1d3;
+}
+
 /*---------------------------------------*/
   
   /*DIVIDER*/
@@ -110,7 +130,6 @@ First breakpoint: 1200 width.
   
   /*FIX THIS*/
   .container {
-      width: 100%;
       box-sizing: border-box;
       margin: auto; /* margin: auto dla wycentrowania calego nagłowka na stronie.*/
   }

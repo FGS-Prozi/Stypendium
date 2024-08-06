@@ -27,5 +27,7 @@ TO DO LIST:
 - Kontakt.
 
 5. Make all websites responsive:
-- Watch course videos and do all of the training videos,
-- Program one websites and copy-paste to others and fix them then.
+- Program one websites and copy-paste to others and fix them then. ###
+
+[!] FIRST, MAKE A PROPER, GOOD, MOBILE PHONE WEBSITE, THEN MAKE RESPONSIVNES FOR TABLETS AND LAPTOPS, AND AFTER THAT FOR DESKTOPS.
+    AFTER THIS, MAKE ALL OTHER WEBSITES.

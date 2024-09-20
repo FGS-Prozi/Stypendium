@@ -1,5 +1,4 @@
 /*COLORS
-
 White:
     Light: #F5F5F5
     Dark: #F0F0F0
@@ -15,14 +14,9 @@ Orange:
 
 Blue:
     #4CA1D3
+    #38598b
 */
-
-/*BREAKPOINTS TO BE MADE
-First breakpoint: 1200 width.
-*/
-
-/*MOBILE PHONES (770/810 width)*/
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 600px) {
     html, body {
       background-color: #F6F4F4;
     
@@ -32,16 +26,28 @@ First breakpoint: 1200 width.
     
       padding: 0;
       margin: 0;
+
+      scroll-behavior: smooth;
     }
   
-  /*HEADER*/
+  /*--- STYLES FOR HEADER ---*/
     .header-top {
       position: fixed;
       width: 100%;
-      text-align: center;
+      padding-left: 10px;
       color: white;
       background-color: #2C2727;
       font-size: 4.5vw;
+    }
+
+    .header-top span>a {
+      transition: color 0.2s;
+      text-decoration: none;
+      color: white;
+    }
+
+    .header-top span>a:active { /*dla urządzeń dotykowych (mobilnych) musi być active, ponieważ hover pozostawia po sobie zmiany koloru i animacji*/
+      color: #FF7517;
     }
 
     header>.divider {
@@ -55,6 +61,7 @@ First breakpoint: 1200 width.
 
     .header-bottom>h1 {
       font-size: 6.9vw;
+      font-family: "Courgette";
     }
       
     .logo {
@@ -75,7 +82,7 @@ First breakpoint: 1200 width.
   /*--- STYLES FOR MENU BUTTON ---*/
     button.menu-toggle {
       display: block;
-      background-color: #d24b22;
+      background-color: #38598b;
       color: white;
       padding: 14px 16px;
       text-align: center;
@@ -100,10 +107,10 @@ First breakpoint: 1200 width.
       padding: 14px 16px;
       text-decoration: none;
       box-sizing: border-box;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.2s ease;
     }
     
-    ul.topnav li a:hover {
+    ul.topnav li a:active {
       background-color: #FF7517;
     }
     
@@ -116,11 +123,12 @@ First breakpoint: 1200 width.
       padding-top: 50px;
     }
 
-  /*--- CENTER / PROPABLY DELETE LATER ---*/
-    .center {
-      margin: 0 auto;
+    hr {
+      border: 2.5px solid #3E3939;
+      border-radius: 10px;
     }
-      
+
+  /*--- STYLES FOR CONTAINER ---*/      
     .container {
       padding: 20px 5vw;
       min-height: 100px;
@@ -128,20 +136,52 @@ First breakpoint: 1200 width.
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35), 0 0 20px 0 rgba(0, 0, 0, 0.3);
       background-color: #f5f5f5ce;
     }
-    
-  /*--- STYLES FOR FOOTER ---*/
-    footer {
-      background-color: #2C2727;
-      color: #F6F4F4;
-      padding: 10px 0;
-      width: 100%;
-      padding-right: 50px;
-      padding-left: 50px;
-      box-sizing: border-box;
+
+    .center {
+      margin: 0 auto;
+    }
+
+  /*--- STYLES FOR MAIN ---*/
+    h3 {
+      font-size: 5vw;
+      font-family: "Courgette";
+    }
+
+    h4 {
+      font-size: 4vw;
+      font-family: "Courgette";
+    }
+
+    p {
+      font-size: 3vw;
+    }
+
+    article>ul>li {
+      text-align: justify;
+      text-justify: inter-word;
+      word-break: normal;
+      font-size: 3vw;
+
+      margin: 20px 0;
     }
     
-    .footer-info {
-      max-width: 600px;
+    .address {
+      list-style-type: none;
+    }
+  /*--- STYLES FOR FOOTER ---*/
+    footer {
+      position: absolute;
+      left: -1;
+      bottom: -1;
+      width: 100%;
+
+      background-color: #2C2727;
+      color: #F6F4F4;
+      box-sizing: border-box;
+    }
+
+    .footer-top {
+      margin: 20px 50px;
     }
     
     .footer-info h2 {
@@ -161,10 +201,10 @@ First breakpoint: 1200 width.
     .footer-social .social-icon {
       color: #F6F4F4;
       font-size: 4vw;
-      transition: color 0.3s;
+      transition: color 0.2s;
     }
     
-    .footer-social .social-icon:hover {
+    .footer-social .social-icon:active {
       color: #FF7517;
     }
     
@@ -181,7 +221,7 @@ First breakpoint: 1200 width.
       text-decoration: none;
     }
     
-    .footer-bottom a:hover {
+    .footer-bottom a:active {
       text-decoration: underline;
     }
   }

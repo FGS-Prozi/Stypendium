@@ -16,73 +16,64 @@ Orange:
 Blue:
     #4CA1D3
 */
-
-/*BREAKPOINTS TO BE MADE
-First breakpoint: 1200 width.
-
-*/
-
-/*LAPTOPS*/
-
-@media only screen and (min-width: 811px) and (max-width: 1200px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
     html, body {
       background-color: #F6F4F4;
     
       font-family: "Poppins";
-      font-size: 20px;
+      font-size: 1.5vw;
       font-weight: 600;
     
       padding: 0;
       margin: 0;
+
+      scroll-behavior: smooth;
     }
     
-    /*HEADER*/
+  /*--- STYLES FOR HEADER ---*/
     .header-top {
-      display: flex;
-      /*
-      justify-content: center;
-      align-items: center;
-      */
-      height: 50px;
-      width: 100%;
-      background-color: #2C2727;
       position: fixed;
-    }
-    
-    /**/
-    .header-top>.container>.icon {
-      font-size:30px;
-      color:white;
-    }
-    span {
+      width: 100%;
+      padding-left: 10px;
       color: white;
-      font-size: 30px;
-      margin-right: 25px;
+      background-color: #2C2727;
+      font-size: 2vw;
     }
-    /**/
-    
+
+    .header-top span>a {
+      transition: color 0.2s;
+      text-decoration: none;
+      color: white;
+    }
+
+    .header-top span>a:hover {
+      color: #FF7517;
+    }
+
     .header-bottom {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
-      max-width: 1000px;
+      padding: 10px;
     }
     
-    /*fix h1 and logo to work well with each other and be responsive*/
     .header-bottom>h1 {
-      font-size: 1.5em;
+      font-size: 3.5vw;
+      font-family: "Courgette";
     }
     
     .logo {
-      width: 100%;
-      max-width: 280px;
+      max-width: 20vw;
       height: auto;
       margin-right: 50px;
     }
-    /*---------------------------------------*/
-    
-    /*NAVIGATION*/
+
+  /*--- STYLES FOR NAVIGATION ---*/
+    button.menu-toggle {
+      display: none;
+    }
+
+  /*--- STYLES FOR MENU BUTTONS ---*/  
     ul.topnav {
         list-style-type: none;
         margin: 0;
@@ -104,11 +95,11 @@ First breakpoint: 1200 width.
         width: 100%;
         color: white;
         text-align: center;
-        padding: 14px 16px;
+        padding: 10px 12px;
         text-decoration: none;
         height: 100%;
         box-sizing: border-box;
-        transition: all 0.5s ease; /* Dodano dla płynnej animacji */
+        transition: all 0.5s ease;
     }
     
     ul.topnav li a:hover:not(.active) {
@@ -118,82 +109,80 @@ First breakpoint: 1200 width.
     ul.topnav li a.active {
         background-color: #4ca1d3;
     }
-    /*---------------------------------------*/
     
-    /*DIVIDER*/
+  /*--- DIVIDER ---*/
     .divider {
-        padding-top: 50px;
+      padding-top: 3vw;
     }
-    /*---------------------------------------*/
-    
-    
-    /*FIX THIS*/
+
+    hr {
+      border: 3.5px solid #3E3939;
+      border-radius: 10px;
+    }
+
+  /*--- STYLES FOR CONTAINER ---*/
     .container {
-        width: 100%;
-        max-width: 1200px;
-        padding-right: 50px; /*paddingi dla estetyki i wyrównania*/
-        padding-left: 50px;
-        box-sizing: border-box;
-        margin: auto; /* margin: auto dla wycentrowania calego nagłowka na stronie.*/
+      padding: 20px 5vw;
+      min-height: 100px;
+      box-sizing: border-box;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35), 0 0 20px 0 rgba(0, 0, 0, 0.3);
+      background-color: #f5f5f5ce;
+    }
+  
+    .center {
+      margin: 0 auto;
+    }
+
+  /*--- STYLES FOR MAIN ---*/
+    h3 {
+      font-size: 1.75vw;
+      font-family: "Courgette";
+    }
+
+    h4 {
+      font-size: 1.5vw;
+      font-family: "Courgette";
+    }
+
+    p {
+      font-size: 1.25vw;
+    }
+
+    article>ul>li {
+      text-align: justify;
+      text-justify: inter-word;
+      word-break: normal;
+      font-size: 1.25vw;
+
+      margin: 20px 0;
     }
     
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 auto;
-        padding: 20px;
-        min-height: 100px;
-        box-sizing: border-box;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35), 0 0 20px 0 rgba(0, 0, 0, 0.3);
-        background-color: #f5f5f5ce;
+    .address {
+      list-style-type: none;
     }
-    
-    .col {
-        flex: 1 0 calc(33.3333% - 20px);
-        padding: 10px;
-        margin: 0 10px;
-        margin-bottom: 20px;
-        box-sizing: border-box;
-        position: relative;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-    }
-    
-    .cell {
-        padding: 20px;
-        background-color: #38598b;
-    }
-    /*---------------------------------------*/
-    
-    
-    
-    
-    /*FOOTER*/
+  /*--- STYLES FOR FOOTER ---*/
     footer {
-        background-color: #2C2727;
-        color: #F6F4F4;
-        padding: 10px 0;
-        width: 100%;
+      position: absolute;
+      left: -1;
+      bottom: -1;
+      width: 100%;
+
+      background-color: #2C2727;
+      color: #F6F4F4;
+      box-sizing: border-box;
     }
-    
+
     .footer-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    
-    .footer-info {
-      max-width: 600px;
+      margin: 20px 50px;
     }
     
     .footer-info h2 {
-      font-size: 2rem;
+      font-size: 3vw;
       margin-bottom: 10px;
     }
     
     .footer-info p {
-      font-size: 1rem;
+      font-size: 1.5vw;
     }
     
     .footer-social {
@@ -203,8 +192,8 @@ First breakpoint: 1200 width.
     
     .footer-social .social-icon {
       color: #F6F4F4;
-      font-size: 24px;
-      transition: color 0.3s;
+      font-size: 2vw;
+      transition: color 0.2s;
     }
     
     .footer-social .social-icon:hover {
@@ -216,7 +205,7 @@ First breakpoint: 1200 width.
     }
     
     .footer-bottom p {
-      font-size: 1rem;
+      font-size: 1.5vw;
     }
     
     .footer-bottom a {
@@ -227,5 +216,4 @@ First breakpoint: 1200 width.
     .footer-bottom a:hover {
       text-decoration: underline;
     }
-    /*---------------------------------------*/
   }

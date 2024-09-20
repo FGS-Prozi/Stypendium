@@ -6,8 +6,13 @@
     <title>Stypendium Emila Szramka</title>
     <meta name="author" content="Szymon Berger">
     <!--CSS DECLARATION-->
-    <link rel="stylesheet" href="./style.css">
+    <!--<link rel="stylesheet" href="./style.css">-->
     <link rel="stylesheet" href="./fonts.css">
+
+    <link rel="stylesheet" href="./responsive_layouts/pc.css">
+    <link rel="stylesheet" href="./responsive_layouts/laptop.css">
+    <link rel="stylesheet" href="./responsive_layouts/tablet.css">
+    <link rel="stylesheet" href="./responsive_layouts/phone.css">
     <!------------------->
 
     <!--CSS GOOGLE ICONS-->
@@ -24,21 +29,19 @@
 <body>
     <header>
         <div class="header-top">
-            <div class="container">
                 <i class="fa fa-envelope icon" aria-hidden="true"></i> <span class="spacer-right">Mail</span>
                 <i class="fa fa-phone-square icon" aria-hidden="true"></i> <span>Phone</span>
-            </div>
         </div>
 
         <div class="divider"></div> <!--DIVIDER-->
 
-        <div class="container header-bottom">
+        <div class="header-bottom">
             <img class="logo" src="./assets/logobg.png">
             <h1>Fundusz Stypendialny<br> im. bł. ks. Emila Szramka</h1>  
         </div>
     </header>
 
-    <nav class="container">
+    <nav>
         <button class="menu-toggle">MENU</button>
         <ul class="topnav">
             <li><a class="active" href="#home">Aktualności</a></li>
@@ -56,8 +59,13 @@
     <div class="divider"></div> <!--DIVIDER-->
 
     <main class="container">
-        <article class="row">
-
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+            </p>
         </article>
     </main>
 
@@ -65,7 +73,6 @@
 
     <footer>
         <div class="footer-top">
-            <div class="container">
                 <div class="footer-info">
                     <h2>Fundusz Stypendialny</h2>
                     <p>&copy; 2024 Fundusz Stypendialny im. bł. ks. Emila Szramka. Wszystkie prawa zastrzeżone.</p>

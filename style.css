@@ -38,17 +38,19 @@ First breakpoint: 1200 width.
   /*HEADER*/
   .header-top {
     display: flex;
-    height: 50px;
+    height: 30px;
     width: 100%;
     text-align: center;
     color: white;
     background-color: #2C2727;
     position: fixed;
-    font-size: 30px;
+  }
+
+  header>.divider {
+    padding: 10px;
   }
     
   .header-bottom {
-    display: block; /*###*/
     text-align: center;
     padding: 20px;
     max-width: 1000px;

@@ -124,7 +124,7 @@ Blue:
     }
 
     hr {
-      border: 2.5px solid #3E3939;
+      border: 0.5px solid #3E3939;
       border-radius: 10px;
     }
 
@@ -157,7 +157,6 @@ Blue:
     }
 
     article>ul>li {
-      text-align: justify;
       text-justify: inter-word;
       word-break: normal;
       font-size: 3vw;
@@ -223,5 +222,20 @@ Blue:
     
     .footer-bottom a:active {
       text-decoration: underline;
+    }
+
+    #contact>ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #contact>ul>li>span {
+      color: #FF7517;
+    }
+
+    #contact>ul>li {
+      text-justify: inter-word;
+      word-break: normal;
+      font-size: 3vw;
     }
   }
